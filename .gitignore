@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Slidev build output and exports
+dist/
+.slidev/
+*-export.pdf
+*-export/
+slides-export.*
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# Local env
+.env
+.env.local
