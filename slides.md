@@ -54,6 +54,10 @@ src: ./sections/tools/aleks.md
 ---
 src: ./sections/tools/chiara.md
 ---
+#### Chiara
+---
+src: ./sections/tools/chiara2.md
+---
 #### Jaro
 ---
 src: ./sections/tools/jaro.md

@@ -2,26 +2,39 @@
 layout: quadrants
 ---
 
-# TODO Toolname (Chiara)
+# GitHub Copilot mit RovoMCP
 
 ::one::
 
-### TODO Kriterium 1
-TODO: Kurzbeschreibung.
+### MCP Configuration
+- direkt in den Repo Settings
+  - Settings -> Copilot -> MCP servers
+- Standard-Config aus der Atlassian Doku
+- Atlassian API-Key nötig -> Service User!
 
 ::two::
 
-### TODO Kriterium 2
-TODO: Kurzbeschreibung.
+### copilot-instructions.md
+- Verwendung des **code-review** Agent Skills
+- Anweisungen was pro Review gemacht werden soll
+  - Jira-Anforderungen prüfen
+  - Technisches Review durchführen
+  - Coding Guidelines prüfen
 
 ::three::
 
-### TODO Kriterium 3
-TODO: Kurzbeschreibung.
+### code-review Skill
+- gibt vor:
+  - welcher MCP Server -> atlassian-rovo-mcp
+  - welche Tickets relevant sind -> LAKWYC-*
+  - guardrails -> lesender Zugriff, erlaubte Jira cloudId
 
 ::four::
 
-### TODO Kriterium 4
-TODO: Kurzbeschreibung.
+### WICHTIG
+- Copilot-Seat f. Session-Log
+- PR Overview nicht veränderbar
+- Session Log lässt eigenes Layout zu
+- API-Key v. Service-User statt personal
 
 <!-- Owner: Chiara -->
