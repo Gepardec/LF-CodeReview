@@ -44,11 +44,7 @@ layout: section
 # Evaluierte Technologien
 
 ---
-src: ./sections/tools/greptile.md
----
-#### Alex
----
-src: ./sections/tools/aleks.md
+src: ./sections/tools/aleks_greptile.md
 ---
 #### Chiara
 ---
