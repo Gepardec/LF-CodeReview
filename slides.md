@@ -64,7 +64,7 @@ src: ./sections/tools/thomas.md
 ---
 
 ---
-src: ./sections/04-demo.md
+src: ./sections/04-vergleich.md
 ---
 
 ---
