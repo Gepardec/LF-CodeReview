@@ -6,8 +6,8 @@ layout: quadrants
 
 ::one::
 
-### TODO Erkenntnis 1
-TODO
+### TODO _Erkenntnis_ 1
+Qualität vom Code Review as stark abhängig von der Qualität der Anforderung.
 
 ::two::
 
