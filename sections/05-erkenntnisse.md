@@ -6,22 +6,27 @@ layout: quadrants
 
 ::one::
 
-### TODO _Erkenntnis_ 1
-Qualität vom Code Review as stark abhängig von der Qualität der Anforderung.
+### Anforderung ist der Hebel
+- Qualität vom Code Review hängt stark von der Qualität der Anforderung ab
+- Ohne klares Ticket nur generische Findings
+- Jira-Anbindung (MCP) macht den Unterschied
 
 ::two::
 
-### TODO Erkenntnis 2
-TODO
+### Erkenntnis 2
+- TODO
 
 ::three::
 
-### TODO Erkenntnis 3
-TODO
+### Erkenntnis 3
+- TODO
 
 ::four::
 
-### TODO Empfehlung
-TODO: Welches Tool würden wir einsetzen – und wofür?
+### Empfehlung
+- Lokal vor dem PR: **IntelliJ AI Assistant** mit Rules im Repo + Atlassian MCP
+- Im PR: Copilot/Greptile/CodeRabbit als Ergänzung
+- Immer zusätzlich menschliches Review, kein Ersatz
 
 <!-- Owner: ganzes Team -->
+

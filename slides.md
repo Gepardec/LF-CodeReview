@@ -10,7 +10,7 @@ layout: cover
 
 Aleks, Chiara, Jaro, Thomas L
 
-TODO Datum
+23.10.2026
 
 <!--
 Struktur: Diese Datei stitcht nur die Abschnitte zusammen.
@@ -61,6 +61,14 @@ src: ./sections/tools/jaro.md
 #### Thomas
 ---
 src: ./sections/tools/thomas.md
+---
+#### Thomas
+---
+src: ./sections/tools/thomas_screen.md
+---
+#### Thomas
+---
+src: ./sections/tools/thomas_fazit.md
 ---
 
 ---

@@ -1,9 +1,22 @@
 ---
-layout: section
+layout: default
 ---
 
 # Vergleich
 
-## TODO: Hier könnte eine Tabelle sein ;-)
+<style>
+table { font-size: 0.7em; width: 100%; }
+th, td { padding: 0.25rem 0.5rem !important; }
+</style>
+
+| | **Greptile** | **Copilot** | **CodeRabbit** | **IntelliJ AI** |
+|---|---|---|---|---|
+| Einsatz | PR + CLI | PR (GitHub) | PR + CLI | lokal in der IDE |
+| Trigger | automatisch | automatisch | automatisch / Kommentar | manuell im Chat |
+| Output | PR-Kommentare | Overview + Session Log | PR-Kommentare + Summary | nur IDE-Chat |
+| Jira / MCP | Integration (beta) | Rovo MCP | nur auf Zuruf | Atlassian MCP |
+| Steuerung | Custom Rules (teils ignoriert) | `copilot-instructions.md` + Skill | `.coderabbit.yaml` (kaum Effekt) | Rules im Repo |
+| Schwäche | nicht deterministisch | Overview fix | Blackbox | kein PR-Kommentar |
+| Kosten | ab $30 / Seat / Monat | Copilot-Seat | – | AI-Assistant-Lizenz |
 
 <!-- Owner: Thomas -->
