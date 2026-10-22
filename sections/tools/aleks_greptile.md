@@ -6,10 +6,10 @@ layout: default
 
 - KI-Code-Review: PRs (GitHub, GitLab, Bitbucket u. a.) + lokal per CLI
 - Repo-Graph: Dateien, Funktionen, Abhängigkeiten
-- Output: PR-Kommentare, Terminal, IDE/Agents (MCP)
+- Output: PR-Kommentare, Terminal
 - Lernen: Team-Feedback, Custom Rules
 - Hosting: Cloud oder Self-Hosting (Enterprise)
-- Laut Greptile: 22.000+ Teams (Brex, Nvidia, Substack)
+- 22.000+ Teams (Brex, Nvidia, Substack)
 
 <!-- Owner: Aleks -->
 
@@ -41,13 +41,13 @@ layout: default
 
 # Greptile: Memory / Kontext
 
-- Custom Rules (Dashboard, `.greptile/rules.md`, `greptile.json`): Regel aus `rules.md` im Test erkannt
-- Gleiche Regel in `CODING_CONVENTIONS.md`: ignoriert
-- Cross-Repo-Cluster
-- Lernen: 👍/👎 + Antworten (andere Emojis ignoriert)
-- `@greptileai`-Regel → sofort Custom Rule
-- Knowledge Base (beta): bei uns leer
-- Integrationen (Jira, beta)
+- Custom Rules (Dashboard, `.greptile/rules.md`):
+- Gleiche Regel in `CODING_CONVENTIONS.md` wurde ignoriert
+- Cross-Repo Context
+- Lernen: 👍/👎 + Antworten
+- `@greptileai` mit Regel als Antwort → sofort Custom Rule
+- Knowledge Base (beta): bei uns leer geblieben
+- Jira (beta): liest Tickets automatisch (Key aus Branch, Titel, Text), zitiert sie aber nur, wenn ein Finding darauf aufbaut
 
 ---
 layout: default
@@ -59,9 +59,10 @@ layout: default
 <div class="flex-1">
 
 - Laut Greptile: App in Sandbox starten, PR zur Laufzeit validieren, Logs im PR
-- **Unser Test:** 3 von 4 Läufen blockiert (kein JDK, Java 21 / Maven Wrapper)
-- Nur ohne Java gelaufen (OpenAPI-Spec)
-- Seit Oktober: kein T-REX im Summary
+- **Anfangs:** 3 von 4 Läufen blockiert (kein JDK, Java 21 / Maven Wrapper)
+- Lief nur, wenn der Beweis ohne Java auskam (Repo-Check statt Maven-Test), unabhängig vom Diff
+- **Seit Mitte Oktober:** installiert selbst ein JDK, führt Quarkus-Tests aus, aber nicht jeder Agent: im selben PR ein Finding mit JDK, eines weiter blockiert
+- Findings mit Vorher/Nachher-Test belegt, Artefakte verlinkt
 - Sandbox-Konfiguration: keine Doku
 
 </div>
@@ -104,10 +105,8 @@ layout: default
 
 - **Nicht deterministisch:** gleicher Commit, 4 PRs → 1 / 1 / 4 / 5 Findings
   - Locking-Bug nur im 1. Lauf
-  - Neu öffnen: Findings teils weg, teils neu
-- **Übersehen:** 7 kaputte Repository-Tests (Testdaten blockieren Cleanup), in keinem Lauf erkannt
-- **Jira intransparent:** Ticket-Nutzung nicht sichtbar, Akzeptanzkriterien unklar
-- Bearbeitete Kommentare: keine Reaktion
+  - Mit Regel: Ticket-Abschnitt, fehlendes Ticket gemeldet, aber verletztes Akzeptanzkriterium als „beabsichtigt“ durchgewunken
+  - Auf Nachfrage im PR: gleiches Kriterium korrekt als Verstoß erkannt
 
 ---
 layout: default

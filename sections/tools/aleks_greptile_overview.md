@@ -25,14 +25,14 @@ layout: quadrants
 - Custom Rules
 - Cross-Repo-Cluster
 - Lernt aus 👍/👎 und Antworten, Knowledge Base (beta)
-- Integrationen (z. B. Jira, beta)
+- Jira (beta): automatisch, Ticket-Check per Custom Rule erzwingbar
 
 ::four::
 
 ### T-REX (beta)
 - Startet die Anwendung in einer Sandbox
 - Validiert den PR zur Laufzeit
-- Bei uns meist blockiert: kein JDK in der Sandbox
+- Anfangs blockiert (kein JDK), seit Mitte Oktober lauffähig
 
 <!-- Owner: Aleks -->
 
