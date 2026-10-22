@@ -13,19 +13,23 @@ layout: quadrants
 
 ::two::
 
-### Gute Eränzung zum eigenen Review
-- Manchmal übersieht man selbst sachen
-- KI Review als Grundlange für eigenen Review
+### Gute Ergänzung zum eigenen Review
+- Manchmal übersieht man selbst Sachen
+- KI Review als Grundlage für eigenen Review
 
 ::three::
 
-### Erkenntnis 3
-- TODO
+### Setup/Verwendung
+- Man bekommt ziemlich schnell ein Ergebnis
+- Das Setup benötigt Zeit zum Refinen, damit der PR so funktioniert wie erwartet.
+- Reviews sind nicht deterministisch (gleicher PR liefert wechselnde Findings)
+- Tools reagieren sehr unterschiedlich auf Repo-Regeln & Guidelines
 
 ::four::
 ### Empfehlung
 - Lokal vor dem PR: **IntelliJ AI Assistant** mit Rules im Repo + Atlassian MCP
 - Im PR: Copilot/Greptile/CodeRabbit als Ergänzung
+  - Wenn im Projekt bereits Github verwendet wird, **Github Copilot** verwenden um kein neues Tool zu benötigen
 - Immer zusätzlich menschliches Review, kein Ersatz
 
 <!-- Owner: ganzes Team -->
