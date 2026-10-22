@@ -13,8 +13,9 @@ layout: quadrants
 
 ::two::
 
-### Erkenntnis 2
-- TODO
+### Gute Eränzung zum eigenen Review
+- Manchmal übersieht man selbst sachen
+- KI Review als Grundlange für eigenen Review
 
 ::three::
 
@@ -22,7 +23,6 @@ layout: quadrants
 - TODO
 
 ::four::
-
 ### Empfehlung
 - Lokal vor dem PR: **IntelliJ AI Assistant** mit Rules im Repo + Atlassian MCP
 - Im PR: Copilot/Greptile/CodeRabbit als Ergänzung
