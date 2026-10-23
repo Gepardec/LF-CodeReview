@@ -9,7 +9,7 @@ layout: quadrants
 ### MCP Configuration
 - direkt in den IntelliJ Settings
   - Settings -> Tools -> AI Assistant -> Model Context Protocol (MCP)
-- Login per OAuth im Browser beim ersten Jira-Call
+- Login per OAuth im Browser beim ersten MCP request
 
 ::two::
 
