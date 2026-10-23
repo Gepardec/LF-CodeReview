@@ -26,7 +26,6 @@ layout: agenda
 - Ausgangssituation
 - Lernziele
 - Evaluierte Technologien
-- Demo
 - Erkenntnisse
 
 ---

@@ -20,16 +20,10 @@ layout: quadrants
 
 ::three::
 
-### Setup
-- MCP einmalig pro Entwickler:in
-- Keine Credentials im Repo
-
-::four::
 
 ### Fazit
-- Der Code Review Skill für muss weiterentwickelt werden, da es von unterschiedlichen Agents/Modellen unterschiedliche verarbeitet wird.
-- Guter Weg für ein **lokales Review vor dem PR**
-- Ergänzung, kein Ersatz für menschliches Review
+- Der Code Review Skill muss regelmäßig weiterentwickelt werden, da es von unterschiedlichen Agents/Modellen unterschiedliche verarbeitet wird.
+- Guter Weg für ein **lokales Review vor dem PR**, aber aktuell noch kein Ersatz für menschliches Review
 
 <!-- Owner: Thomas L -->
 

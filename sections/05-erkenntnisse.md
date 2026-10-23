@@ -29,8 +29,8 @@ layout: quadrants
 ### Empfehlung
 - Lokal vor dem PR: **IntelliJ AI Assistant** mit Rules im Repo + Atlassian MCP
 - Im PR: Copilot/Greptile/CodeRabbit als Ergänzung
-  - Wenn im Projekt bereits Github verwendet wird, **Github Copilot** verwenden um kein neues Tool zu benötigen
-- Immer zusätzlich menschliches Review, kein Ersatz
+  - Wenn im Projekt bereits Github verwendet wird, **Github Copilot** verwenden, um kein neues Tool zu benötigen
+- Noch kein Ersatz für menschliches Review
 
 <!-- Owner: ganzes Team -->
 
