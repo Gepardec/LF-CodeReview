@@ -17,6 +17,6 @@ th, td { padding: 0.25rem 0.5rem !important; }
 | Jira / MCP | Integration (beta) | Rovo MCP | Integration | Atlassian MCP |
 | Steuerung | Custom Rules (teils ignoriert) | `copilot-instructions.md` + Skill | `.coderabbit.yaml` (kaum Effekt) | Rules im Repo |
 | Schwäche | nicht deterministisch | Overview fix | Blackbox | kein PR-Kommentar |
-| Kosten | ab $30 / Seat / Monat | Copilot-Seat | 24$ | AI-Assistant-Lizenz (ca. 1 Credit/Review) |
+| Kosten | 1$ pro Credit (1 Review mind. 1 Credit)| Copilot-Seat | 24$ | AI-Assistant-Lizenz (ca. 1 Credit/Review) |
 
 <!-- Owner: Thomas -->
