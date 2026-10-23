@@ -21,8 +21,8 @@ Analysiert CI-Fehler und schlägt Fixes vor.
 
 ::four::
 
-### Lokal & Modell
-Per **CLI** auch lokal vor dem Push nutzbar. Das **Modell ist nicht wählbar**.
+### Lokal
+Per **CLI** auch lokal vor dem Push nutzbar.
 
 ---
 layout: two-cols-header
@@ -132,8 +132,4 @@ Ein vorgegebenes Gerüst: Konfiguration ist möglich, hat im Review aber **wenig
 - Oberflächliche Tiefe
 - Jira-Abgleich nur auf Zuruf
 
-<div class="mt-8 text-sm opacity-80">
 
-**Empfehlung:** als Ergänzung zum menschlichen Review einsetzen, nicht als Ersatz für Tests oder die fachliche Prüfung.
-
-</div>
