@@ -2,26 +2,27 @@
 layout: quadrants
 ---
 
-# CodeRabbit (Jaro)
+# Was kann CodeRabbit?
 
 ::one::
 
-### Was ist es?
-KI-Reviewer für Pull Requests: Summary, Walkthrough und Inline-Kommentare direkt im PR, zusätzlich als **CLI**. Das **Modell ist nicht wählbar**.
+### PR-Review
+Zusammenfassung, Ablaufdiagramme und Inline-Kommentare direkt im PR, plus eigene Web-UI.
+
 ::two::
 
-### Konfigurierbarkeit
-`.coderabbit.yaml` und Guidelines im Markdown-Format hatten **kaum spürbaren Effekt**. Das Review folgt einem festen Muster.
+### Projektkontext
+Bezieht Guidelines, Learnings, Issue-Tracker und MCP ein.
 
 ::three::
 
-### MCP Anbindung möglich
-Jira MCP konnte aber **nicht** im Review Prozess verwendet werden. Erst ein expliziter PR-Kommentar hat eine Prüfung ausgelöst.
+### CI-Analyse
+Analysiert CI-Fehler und schlägt Fixes vor.
 
 ::four::
 
-### 🔍 Review-Tiefe
-Es wurden **keine Tests ausgeführt**. Viele Kommentare waren generisch und unabhängig vom Issue, das Review blieb eher oberflächlich.
+### Lokal & Modell
+Per **CLI** auch lokal vor dem Push nutzbar. Das **Modell ist nicht wählbar**.
 
 ---
 layout: two-cols-header
@@ -32,39 +33,83 @@ layout: two-cols-header
 ::left::
 
 ### Setup
-1. Repos freigeben im WebUI freigeben
+1. Repos im WebUI freigeben
 2. `.coderabbit.yaml` ins Repo-Root legen<br><span class="text-xs opacity-70">(muss im Feature-Branch liegen)</span>
 3. Integrationen wie Jira/MCP in der Web-UI verbinden
 
-### Review auslösen
+### CLI Review
+
+```bash
+cr auth login            # Einmalig anmelden
+cr --base develop        # Branch gegen develop prüfen
+cr --type uncommitted    # Nur lokale Änderungen
+```
+
+::right::
+
+### PR Review
 - **Automatisch** bei neuen PRs und Push
 - **Manuell** per PR-Kommentar
 
 ```text
 @coderabbitai review        # nur neue Änderungen
 @coderabbitai full review   # ganzer PR neu
-```
-
-::right::
-
-### Weitere PR-Commands
-
-```text
-@coderabbitai pause | resume
-@coderabbitai resolve
 @coderabbitai configuration
-@coderabbitai generate unit tests
-@coderabbitai help
+@coderabbitai resolve
 ```
 
 Auf Inline-Kommentare antworten → Chat mit dem Bot
 
-### CLI (lokal vor dem Push)
+---
+layout: default
+---
 
-```bash
-cr auth login --region eu
-cr --base develop   # Review der Änderungen
-```
+# Pre-Merge-Checks
+
+<div class="grid grid-cols-2 gap-4 mt-2 items-center">
+
+<img
+src="/coderabbit/Summary1.png"
+class="mx-auto max-h-[400px] w-auto object-contain rounded shadow-lg"
+/>
+
+<img
+src="/coderabbit/Summary2.png"
+class="mx-auto max-h-[400px] w-auto object-contain rounded shadow-lg"
+/>
+
+</div>
+
+---
+layout: default
+---
+
+# Inline comments
+
+<div class="flex justify-center items-center h-[420px]">
+
+<img
+src="/coderabbit/Comment.png"
+class="max-h-[400px] w-auto object-contain rounded shadow-lg"
+/>
+
+</div>
+
+---
+layout: default
+class: '!pt-4'
+---
+
+# Jira Integration
+
+<div class="flex justify-center items-center h-[470px]">
+
+<img
+src="/coderabbit/Jira.png"
+class="max-h-[460px] w-auto object-contain rounded shadow-lg"
+/>
+
+</div>
 
 ---
 layout: two-cols-header
@@ -84,7 +129,7 @@ Ein vorgegebenes Gerüst: Konfiguration ist möglich, hat im Review aber **wenig
 
 ### Schwächen
 - Kaum steuerbar, eine Blackbox-Pipeline
-- Keine Tests, oberflächliche Tiefe
+- Oberflächliche Tiefe
 - Jira-Abgleich nur auf Zuruf
 
 <div class="mt-8 text-sm opacity-80">
